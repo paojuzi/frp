@@ -1,0 +1,38 @@
+# service address
+serverAddr = "    "
+
+# service port
+serverPort = 7000
+
+# dashboard address
+webServer.addr = "0.0.0.0"
+
+# dashboard port 
+webServer.port = 7500
+
+# dashboard login username
+webServer.user = "    "
+
+# dashboard login password
+webServer.password = "    "
+
+# password form:same with the service
+auth.method = "token"
+
+# password:same with the service
+auth.token = "    "
+ 
+[[proxies]]
+name = "ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 6000
+ 
+[[proxies]]
+name = "http-web"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 80
+# service address
+customDomains = ["    "]

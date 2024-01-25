@@ -1,0 +1,24 @@
+# bind port
+bindPort = 7000
+
+# password form
+auth.method = "token"
+
+# password:same with the client
+auth.token = "       "
+
+# dashboard address:defalt
+webServer.addr = "0.0.0.0"
+
+# dashboard port
+webServer.port = 7500
+
+# dashboard login username
+webServer.user = "    "
+
+# dashboard login password
+webServer.password = "    "
+
+# proxy
+vhostHTTPPort = 8080
+vhostHTTPSPort = 8443 
